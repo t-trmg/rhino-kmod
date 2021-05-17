@@ -1,0 +1,1 @@
+cmd_/usr/local/src/rhino-linux-0.99.7/drivers/rhino/r1t1/r1t1.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/r1t1/r1t1.ko /usr/local/src/rhino-linux-0.99.7/drivers/rhino/r1t1/r1t1.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/r1t1/r1t1.mod.o

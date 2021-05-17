@@ -1,0 +1,1 @@
+cmd_/usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx.ko /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx.mod.o

@@ -1,0 +1,2 @@
+/usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx.ko
+/usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/rcbfx_base.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/GpakApi.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/GpakCust.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/DspLoader.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/GpakDsp10.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/GpakDsp0704.o /usr/local/src/rhino-linux-0.99.7/drivers/rhino/rcbfx/GpakDsp0708.o
