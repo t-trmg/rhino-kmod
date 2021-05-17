@@ -232,7 +232,7 @@ static void rcb_card_check_sigbits(struct rcb_card_t *rcb_card, int status)
 
 static unsigned short int rcb_card_dsp_ping(struct rcb_card_t *rcb_card);
 
-DAHDI_IRQ_HANDLER(rcb_card_interrupt)
+static irqreturn_t rcb_card_interrupt(int irq, void *dev_id)
 {
 	struct rcb_card_t *rcb_card = dev_id;
 	int status, upd_state, regnum;
@@ -1916,7 +1916,7 @@ static struct pci_driver rcb_driver = {
 static int __init rcb_card_init(void)
 {
 	int res;
-	res = dahdi_pci_module(&rcb_driver);
+	res = pci_register_driver(&rcb_driver);
 	if (res)
 		return -ENODEV;
 	return 0;

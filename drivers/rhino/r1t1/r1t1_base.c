@@ -1033,7 +1033,7 @@ static void __r1t1_do_counters(struct r1t1_card *r1t1_card)
 	}
 }
 
-DAHDI_IRQ_HANDLER(r1t1_interrupt)
+static irqreturn_t r1t1_interrupt(int irq, void *dev_id)
 {
 	struct r1t1_card *r1t1_card = dev_id;
 	unsigned long flags;

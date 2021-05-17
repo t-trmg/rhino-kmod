@@ -2985,7 +2985,7 @@ static inline void rxt1_span_framer_interrupt(struct rxt1_card_t *rxt1_card, int
 
 }
 
-DAHDI_IRQ_HANDLER(rxt1_card_interrupt_gen2)
+static irqreturn_t rxt1_card_interrupt_gen2(int irq, void *dev_id)
 {
 	struct rxt1_card_t *rxt1_card = dev_id;
 	unsigned char cis;
@@ -4842,7 +4842,7 @@ static struct pci_driver rxt1_driver = {
 static int __init rxt1_driver_init(void)
 {
 	int res;
-	res = dahdi_pci_module(&rxt1_driver);
+	res = pci_register_driver(&rxt1_driver);
 	if (res)
 		return -ENODEV;
 	return 0;
